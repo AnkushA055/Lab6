@@ -1,0 +1,7 @@
+C:\Users\ankusagr\Documents\Visual Studio 5-9\Lab6-ExceptionHandling\Lab6-ExceptionHandling\bin\Debug\Lab6-ExceptionHandling.exe.config
+C:\Users\ankusagr\Documents\Visual Studio 5-9\Lab6-ExceptionHandling\Lab6-ExceptionHandling\bin\Debug\Lab6-ExceptionHandling.exe
+C:\Users\ankusagr\Documents\Visual Studio 5-9\Lab6-ExceptionHandling\Lab6-ExceptionHandling\bin\Debug\Lab6-ExceptionHandling.pdb
+C:\Users\ankusagr\Documents\Visual Studio 5-9\Lab6-ExceptionHandling\Lab6-ExceptionHandling\obj\Debug\Lab6-ExceptionHandling.csprojAssemblyReference.cache
+C:\Users\ankusagr\Documents\Visual Studio 5-9\Lab6-ExceptionHandling\Lab6-ExceptionHandling\obj\Debug\Lab6-ExceptionHandling.csproj.CoreCompileInputs.cache
+C:\Users\ankusagr\Documents\Visual Studio 5-9\Lab6-ExceptionHandling\Lab6-ExceptionHandling\obj\Debug\Lab6-ExceptionHandling.exe
+C:\Users\ankusagr\Documents\Visual Studio 5-9\Lab6-ExceptionHandling\Lab6-ExceptionHandling\obj\Debug\Lab6-ExceptionHandling.pdb
