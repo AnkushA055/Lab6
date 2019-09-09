@@ -26,7 +26,8 @@ namespace Lab6_ExceptionHandling
         public string Address { get => _address; set => _address = value; }
         public string City { get => _city; set => _city = value; }
         public string Phone { get => _phone; set => _phone = value; }
-        public int CreditLimit {
+        public int CreditLimit
+        {
             get
             {
                 return _creditLimit;
@@ -46,9 +47,9 @@ namespace Lab6_ExceptionHandling
         }
 
         public Customer()
-        {                 }
+        { }
 
-        public Customer(string customerId, string customerName, string address, string city,string phone, int creditLimit)
+        public Customer(string customerId, string customerName, string address, string city, string phone, int creditLimit)
         {
             this.CustomerId = customerId;
             this.CustomerName = customerName;
@@ -76,19 +77,21 @@ namespace Lab6_ExceptionHandling
                 Console.WriteLine("Enter Address :");
                 customer.Address = Console.ReadLine();
                 Console.WriteLine("Enter City :");
+                customer.City = Console.ReadLine();
+                Console.WriteLine("Enter Credit Limit :");
                 customer.CreditLimit = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Thanks");
             }
 
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 FileInfo fi = new FileInfo(@"c:\Capg\Limit.txt");
                 FileStream fs = new FileStream(@"c:\Capg\Limit.txt", FileMode.Append, FileAccess.Write);
-                string content = $"(DateTime.Now)" +
-                    $"\nMessage(ex.Message)" +
-                    $"\nstack trace(ex.StackTrace)" +
-                    $"\nInnerException(ex.InnerException.Message)" +
-                    $"\ntype(ex.GetType().ToString())";
+                string content = $"{DateTime.Now}" +
+                    $"\nMessage{ex.Message}" +
+                    $"\nstack trace{ex.StackTrace}" +
+                    $"\nInnerException{ex.InnerException?.Message}" +
+                    $"\ntype{ex.GetType().ToString()}";
 
                 byte[] barray = System.Text.Encoding.ASCII.GetBytes(content);
                 fs.Write(barray, 0, barray.Length);
